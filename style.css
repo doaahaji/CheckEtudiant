@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Réinitialisation */
 * {
     margin: 0;
@@ -256,4 +257,264 @@ footer p {
     color: #b0b0b0; /* Texte gris clair */
     margin-bottom: 10px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+=======
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Corps de la page */
+body {
+    background: #300759;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+/* En-tête */
+header {
+    background-color: #BF11A2; /* Cyan lumineux */
+    color: white;
+    padding: 30px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+/* Animation d'onde en fond */
+header::before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, #6129D9, #ffeb3b);
+    opacity: 0.3;
+    animation: waves 5s infinite linear;
+}
+
+@keyframes waves {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Conteneur du logo et titre */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #9775f5;
+    transition: transform 0.4s ease-in-out;
+}
+
+.logo-container img:hover {
+    transform: rotate(360deg) scale(1.3);
+}
+
+.logo-container h1 {
+    font-size: 45px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    animation: titleEffect 1.5s ease-out infinite alternate;
+}
+
+@keyframes titleEffect {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+/* Formulaire */
+
+form {
+    /*background-image: url('assets/back.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; */ 
+    background-color: #3F0A73;
+    padding: 40px;
+    margin: 30px auto;
+    border: 2px solid #751EB3; /* Violet clair */
+    width: 90%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 5;
+}
+
+form:hover {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+    transform: scale(1.03);
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input, button {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: 2px solid #BF11A2;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    background-color: #300759;
+    color: white;
+}
+
+input:focus, button:focus {
+    border-color: #c759b5;
+    background-color: #333;
+    outline: none;
+}
+
+button {
+    background-color: #BF11A2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #c759b5;
+    transform: scale(1.1);
+}
+
+/* Tableau */
+table {
+    width: 90%;
+    margin: 50px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(63, 10, 115, 0.5);
+}
+
+th, td {
+    padding: 20px 30px;
+    text-align: left;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+}
+
+th {
+    background-color: #3F0A73;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+td {
+    background-color: #1c1c1c;
+}
+
+tr {
+    transition: background-color 0.3s ease;
+}
+
+table tr:nth-child(odd) {
+    background-color: #222;
+}
+
+table tr:nth-child(even) {
+    background-color: #1c1c1c;
+}
+
+
+/* Lien simple */
+a {
+    display: inline-block;
+    padding: 0px 0px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 0px 0px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Effets de particules */
+@keyframes particles {
+    0% { opacity: 0; transform: scale(0); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.particle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #3F0A73;
+    border-radius: 50%;
+    animation: particles 2s infinite ease-in-out;
+    opacity: 0;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+/* Création d'une animation de particules */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: transparent;
+    overflow: hidden;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c; /* Fond sombre */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    position: relative;
+}
+
+footer p {
+    font-size: 14px;
+    color: #b0b0b0; /* Texte gris clair */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+>>>>>>> 9844f4f (Ajout des 3 dossiers depuis HAJI_Doaa)
 }
