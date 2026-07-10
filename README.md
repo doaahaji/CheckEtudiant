@@ -71,6 +71,3 @@ GesNotes/
 
 Pour créer la base de données, importer le fichier `gesnotes.sql` dans MySQL.
 
-## Auteur
-
-Projet développé par **Doaa HAJI**.
