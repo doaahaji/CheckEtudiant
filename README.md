@@ -1,22 +1,26 @@
-# 📌 Gestion des Notes - GesNotes
+# Gestion des Notes - GesNotes
 
-## 📖 Description
+## Description
+
 Ce projet est une application web en PHP permettant de gérer les notes des étudiants. Il permet d'ajouter, modifier, supprimer et afficher les notes des étudiants. Il intègre également un système d'authentification sécurisé et la génération de rapports PDF.
 
-## 📋 Fonctionnalités
-- 🔐 Authentification sécurisée (mots de passe chiffrés en MD5)
-- 📄 Gestion des étudiants (ajout, modification, suppression)
-- 📊 Affichage des moyennes et observations
-- 📷 Upload et gestion des images des étudiants
-- 📃 Génération de rapports PDF des notes
+## Fonctionnalités
 
-## 🛠️ Technologies utilisées
+- Authentification sécurisée (mots de passe chiffrés en MD5)
+- Gestion des étudiants (ajout, modification, suppression)
+- Affichage des moyennes et observations
+- Upload et gestion des images des étudiants
+- Génération de rapports PDF des notes
+
+## Technologies utilisées
+
 - **Langage** : PHP
 - **Base de données** : MySQL
 - **Bibliothèque PDF** : FPDF
 - **Frontend** : HTML, CSS
 
-## 🚀 Installation
+## Installation
+
 1. **Extraire le dossier**
 
 2. **Configurer la base de données**
@@ -24,15 +28,17 @@ Ce projet est une application web en PHP permettant de gérer les notes des étu
    - Importer le fichier `gesnotes.sql` disponible dans le projet
    - Vérifier les paramètres de connexion dans `db.php`
 
-4. **Accéder à l'application**
-   - Ouvrir un navigateur et aller sur : `http://localhost/chemin_dossier(HAJI_Doaa)
+3. **Accéder à l'application**
+   - Ouvrir un navigateur et aller sur :
+     `http://localhost/chemin_dossier(HAJI_Doaa)`
 
-5. **Login**
-   - Identifiant: doaa56
-   - Mot de pass: 1056
+4. **Connexion**
+   - Identifiant : `doaa56`
+   - Mot de passe : `1056`
 
-## 📂 Structure du projet
-```
+## Structure du projet
+
+```text
 GesNotes/
 │── assets/            # Dossier contenant les images uploadées
 │── fpdf/              # Bibliothèque pour la génération de PDF
@@ -48,17 +54,23 @@ GesNotes/
 │── README.md          # Documentation du projet
 ```
 
-## 📌 Utilisation
-1. **Se connecter** avec un compte valide.
-2. **Gérer les étudiants** : Ajouter, modifier ou supprimer leurs informations.
-3. **Générer un rapport PDF** : Cliquer sur l'icône 📝 pour générer un rapport PDF des notes.
+## Utilisation
 
-## 📦 Base de données
+1. Se connecter avec un compte valide.
+2. Gérer les étudiants : ajouter, modifier ou supprimer leurs informations.
+3. Générer un rapport PDF en cliquant sur l'icône correspondante.
+
+## Base de données
+
 - Nom de la base : `gesNotes`
-- Tables :
-  - `Crendentiels` (Stocke les utilisateurs)
-  - `Notes` (Stocke les informations des étudiants)
-- Pour créer la base, importer `gesnotes.sql` dans MySQL.
 
-## ✨ Auteur
-Projet développé par **Doaa HAJI** 🎓
+### Tables
+
+- `Crendentiels` : stocke les utilisateurs.
+- `Notes` : stocke les informations des étudiants.
+
+Pour créer la base de données, importer le fichier `gesnotes.sql` dans MySQL.
+
+## Auteur
+
+Projet développé par **Doaa HAJI**.
